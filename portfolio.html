@@ -27,7 +27,7 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container">
-        <div class="heder-container">
+        <div class="heder-container-desktop">
           <nav class="nav">
             <a href="./index.html" class="logo-header"
               ><span class="web">WEB</span>STUDIO</a
@@ -47,8 +47,6 @@
             </ul>
           </nav>
 
-          <!-- контакти -->
-
           <address class="address">
             <ul class="address-list list">
               <li class="address-item">
@@ -63,6 +61,24 @@
               </li>
             </ul>
           </address>
+        </div>
+        <div class="heder-container-mobile">
+          <a href="./index.html" class="logo-header"
+            ><span class="web">WEB</span>STUDIO</a
+          >
+          <button
+            class="header-burger js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="29" height="18">
+              <use
+                class="burger-icon"
+                href="./images/icons.svg#icon-charm_menu-hamburger"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>

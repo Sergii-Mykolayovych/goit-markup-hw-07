@@ -28,7 +28,7 @@
 
     <header class="header">
       <div class="container">
-        <div class="heder-container">
+        <div class="heder-container-desktop">
           <nav class="nav">
             <a href="./index.html" class="logo-header"
               ><span class="web">WEB</span>STUDIO</a
@@ -46,8 +46,6 @@
             </ul>
           </nav>
 
-          <!-- контакти -->
-
           <address class="address">
             <ul class="address-list list">
               <li class="address-item">
@@ -63,6 +61,24 @@
             </ul>
           </address>
         </div>
+        <div class="heder-container-mobile">
+          <a href="./index.html" class="logo-header"
+            ><span class="web">WEB</span>STUDIO</a
+          >
+          <button
+            class="header-burger js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="29" height="18">
+              <use
+                class="burger-icon"
+                href="./images/icons.svg#icon-charm_menu-hamburger"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -71,7 +87,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <!-- кнопка -->
+
           <button class="button-servise" type="button" data-modal-open>
             Order Service
           </button>
@@ -80,11 +96,9 @@
       <!-- функції -->
       <section class="feature">
         <div class="container">
-          <!-- особливості -->
           <h2 class="visually-hidden">features</h2>
 
           <ul class="feature-list list">
-            <!-- стратегія -->
             <li class="feature-list-item">
               <div class="feature-container">
                 <svg class="feature-icon">
@@ -102,7 +116,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <!-- пунктуальність -->
+
             <li class="feature-list-item">
               <div class="feature-container">
                 <svg class="feature-icon">
@@ -120,7 +134,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <!-- старанність -->
+
             <li class="feature-list-item">
               <div class="feature-container">
                 <svg class="feature-icon">
@@ -138,7 +152,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <!-- технології -->
+
             <li class="feature-list-item">
               <div class="feature-container">
                 <svg class="feature-icon">
@@ -166,6 +180,7 @@
           <ul class="works-list list">
             <li class="works-list-item">
               <img
+                srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="monitor"
                 width="360"
@@ -174,6 +189,7 @@
             </li>
             <li class="works-list-item">
               <img
+                srcset="./images/slide.jpg 1x, ./images/slide@2x.jpg 2x"
                 src="./images/slide.jpg"
                 alt="slide"
                 width="360"
@@ -182,6 +198,10 @@
             </li>
             <li class="works-list-item">
               <img
+                srcset="
+                  ./images/phone-and-laptop.jpg    1x,
+                  ./images/phone-and-laptop@2x.jpg 2x
+                "
                 src="./images/phone-and-laptop.jpg"
                 alt="phone and laptop"
                 width="360"
@@ -193,11 +213,15 @@
       </section>
       <!-- наша команда -->
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Mark-Guerrero.jpg    1x,
+                  ./images/Mark-Guerrero@2x.jpg 2x
+                "
                 src="./images/Mark-Guerrero.jpg"
                 alt="Product Designer Mark Guerrero"
                 width="264"
@@ -234,6 +258,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/Tom-Ford.jpg 1x, ./images/Tom-Ford@2x.jpg 2x"
                 src="./images/Tom-Ford.jpg"
                 alt="Frontend Developer Tom Ford"
                 width="264"
@@ -270,6 +295,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Camila-Garcia.jpg    1x,
+                  ./images/Camila-Garcia@2x.jpg 2x
+                "
                 src="./images/Camila-Garcia.jpg"
                 alt="Marketing Camila Garcia"
                 width="264"
@@ -306,6 +335,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/Daniel-Wilson.jpg    1x,
+                  ./images/Daniel-Wilson@2x.jpg 2x
+                "
                 src="./images/Daniel-Wilson.jpg"
                 alt="UI Designer Daniel Wilson"
                 width="264"
@@ -345,7 +378,7 @@
       </section>
 
       <!-- Клієнти -->
-      <section class="Customers">
+      <section class="customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
@@ -502,7 +535,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>
+        <button class="button-close" type="button" data-modal-close>
           <svg class="close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -595,6 +628,75 @@
       </div>
     </div>
 
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button-close js-close-menu">
+        <svg class="close" width="24" height="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <ul class="mobile-menu list">
+          <li class="item"><a href="./index.html" class="link">Studio</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="mobile-address">
+        <ul class="mobile-auth-nav list">
+          <li class="item">
+            <a href="tel:+110001111111" class="mobile-tel-link link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="mobile-mail-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="list soc-med-list">
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-list-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-list-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-list-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-link">
+              <svg class="social-list-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

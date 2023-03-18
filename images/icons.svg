@@ -166,5 +166,9 @@
                 d="M38.4 0l-38.4 18 12.272 3.787 18.928-14.787-14.397 16.186 0.011 0.005-0.014-0.005v8.814l6.882-6.691 8.72 2.691 5.998-28z">
             </path>
         </symbol>
+        <symbol id="icon-charm_menu-hamburger" viewBox="0 0 23 16">
+            <path stroke="#2E2F42" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="2.1818" d="M0.98 14.577h21.482M0.98 7.807h21.482M0.98 1.039h21.482"></path>
+        </symbol>
     </defs>
 </svg>
